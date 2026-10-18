@@ -21,4 +21,8 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="RunWayy.Tests\RunWayy.Tests.csproj" />
+  </ItemGroup>
+
 </Project>
