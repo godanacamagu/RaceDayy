@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -39,10 +38,13 @@
                             }
                             else if (User.IsInRole("Participant"))
                             {
-                               
-                            
+                                <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Enrolments" asp-action="My">Enrolments</a>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Enrolments" asp-action="Create">Signup</a>
+                            </li>
                             }
-                        <partial name="_NavLinks" />
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

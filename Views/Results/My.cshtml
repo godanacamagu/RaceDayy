@@ -1,7 +1,6 @@
 @model IEnumerable<RaceDayy.Models.Result>
 @{ ViewData["Title"] = "My results"; }
 
-<partial name="_Alerts" />
 <h1 class="h3">My results</h1>
 
 @if (!Model.Any())
@@ -26,5 +25,3 @@ else
         </tbody>
     </table>
 }
-
-<a asp-controller="Enrolments" asp-action="My" class="btn btn-outline-secondary">My enrolments</a>

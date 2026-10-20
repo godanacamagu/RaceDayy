@@ -50,14 +50,6 @@
         {
             <a asp-controller="Enrolments" asp-action="Create" asp-route-eventId="@Model.Id" class="btn btn-primary">Enter this event</a>
         }
-        else if (Model.Date <= DateTime.Now)
-        {
-            <span class="align-self-center text-muted">Entries are closed. This event has already taken place.</span>
-        }
-        else
-        {
-            <span class="align-self-center text-muted">Entries open once the organiser adds categories.</span>
-        }
     }
 
     @if (User.IsInRole("Organiser") && isOwner)
